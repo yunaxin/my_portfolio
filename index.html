@@ -3,21 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amelia Oo: Personal site and portfolio</title>
+    <title>Amelia Oo: Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="projects/index.html">Projects</a></li>
             <li><a href="contact/index.html">Contact</a></li>
-            <li><a href="https://github.com/yunaxin" target="_blank">GitHub</a></li>
             <li><a href="resume/index.html">Resume</a></li>
+            <li>
+                <a href="https://github.com/yunaxin" target="_blank">
+                    GitHub ↗
+                </a>
+            </li>
         </ul>
     </nav>
-    <h1>Amelia Oo: Personal site and portfolio</h1>
-    <p> a Junior student at UCSD studying Data Science and Business Analytics</p>
-    <img src="images/scene-Bambi.jpg" alt="A scene from the movie Bambi">
+
+    <main>
+        <section class="intro">
+            <div>
+                <p class="eyebrow">Welcome to my little corner of the web</p>
+                <h1>Hi, I’m Amelia.</h1>
+                <p>
+                    I’m a junior at UC San Diego majoring in Data Science
+                    with a minor in Business Analytics.
+                </p>
+                <p>
+                    Outside of class, I enjoy exploring the city,
+                    filming and editing videos, and traveling.
+                </p>
+                <a class="button" href="projects/index.html">
+                    Explore my projects
+                </a>
+            </div>
+
+            <figure>
+                <img src="images/scene-Bambi.jpg"
+                     alt="A scene from the movie Bambi">
+                <figcaption>A little inspiration from Bambi.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Take a look around</h2>
+            <div class="cards">
+                <article>
+                    <h3>Projects</h3>
+                    <p>A space for things I build and ideas I explore.</p>
+                    <a href="projects/index.html">View projects →</a>
+                </article>
+
+                <article>
+                    <h3>Resume</h3>
+                    <p>
+                        A sample resume with fictional details,
+                        created for this lab.
+                    </p>
+                    <a href="resume/index.html">View resume →</a>
+                </article>
+
+                <article>
+                    <h3>Contact</h3>
+                    <p>Have a question or want to say hello?</p>
+                    <a href="contact/index.html">Get in touch →</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 · Amelia Oo · Personal Portfolio</p>
+    </footer>
 </body>
 </html>

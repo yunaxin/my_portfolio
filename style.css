@@ -1,6 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  /* Set line height to 1.5 times the font size
-	   and use the OS’s UI font as the website font
-	 */
-  font: 100%/1.5 system-ui;
+    margin: 0;
+    padding: 24px;
+    background: #fff5f7;
+    color: #493b40;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.6;
+}
+
+nav,
+main,
+footer {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+a {
+    color: #994c67;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    color: #73364b;
+}
+
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid #994c67;
+    outline-offset: 4px;
+}
+
+/* Allow navigation links to wrap on smaller screens. */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    padding: 0 0 18px;
+    margin: 0 0 32px;
+    list-style: none;
+    border-bottom: 1px solid #efd0da;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a[aria-current="page"] {
+    border-bottom: 2px solid currentColor;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    margin: 12px 0 20px;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+.eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #994c67;
+}
+
+section {
+    margin-block: 40px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 36px;
+    align-items: center;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+.button,
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #994c67;
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background: #73364b;
+    color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+article {
+    padding: 24px;
+    margin-bottom: 16px;
+    background: #fffafb;
+    border: 1px solid #efd0da;
+    border-radius: 12px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    border: 1px solid #c68b9e;
+    border-radius: 8px;
+    background: #fffafb;
+    color: inherit;
+    font: inherit;
+}
+
+textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid #efd0da;
+    font-size: 0.9rem;
+}
+
+/* Stack the content on smaller screens. */
+@media (max-width: 700px) {
+    body {
+        padding: 16px;
+    }
+
+    .intro,
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        gap: 24px;
+    }
 }
