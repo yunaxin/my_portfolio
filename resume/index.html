@@ -3,83 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume: Personal Portfolio</title>
+    <title>Resume: Amelia's Portfolio</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../projects/index.html">Projects</a></li>
             <li><a href="../contact/index.html">Contact</a></li>
-            <li><a href="index.html">Resume</a></li>
+            <li><a href="index.html" aria-current="page">Resume</a></li>
             <li>
-                <a href="https://github.com/yunaxin" target="_blank">
-                    GitHub
+                <a href="https://github.com/yunaxin"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub ↗
                 </a>
             </li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Sample Resume</h1>
-
-    <section>
-        <h2>Education</h2>
-        <article>
-            <h3>Example University</h3>
-            <p>Bachelor of Science in Data Science</p>
+    <main>
+        <header>
+            <h1>My Resume</h1>
             <p>
-                <time datetime="2024-09">September 2024</time>
-                –
-                <time datetime="2028-06">June 2028</time>
-                (expected)
+                I'm Amelia, a Data Science student interested in
+                data analytics and machine learning.
             </p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-        <article>
-            <h3>Student Assistant — Example Organization</h3>
             <p>
-                <time datetime="2025-06">June 2025</time>
-                –
-                <time datetime="2025-09">September 2025</time>
+                <a href="https://github.com/yunaxin">My GitHub profile</a>
             </p>
+        </header>
+
+        <section aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+
+            <article>
+                <h3>University of California, San Diego</h3>
+                <p>
+                    Bachelor of Science in Data Science<br>
+                    Minor in Business Analytics
+                </p>
+                <p>
+                    Expected graduation:
+                    <time datetime="2028-03">March 2028</time>
+                </p>
+            </article>
+
+            <article>
+                <h3>De Anza College</h3>
+                <p>
+                    Completed coursework before transferring to
+                    UC San Diego.
+                </p>
+            </article>
+        </section>
+
+        <section aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
+
+            <article>
+                <h3>Fiscal Support Assistant</h3>
+                <p>UC San Diego Department of Mathematics</p>
+                <p>Current position</p>
+                <ul>
+                    <li>
+                        Support department staff with fiscal and
+                        administrative tasks.
+                    </li>
+                    <li>
+                        Help organize documents and maintain records.
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Data Analytics Extern</h3>
+                <p>TruBridge Healthcare</p>
+                <p>
+                    <time datetime="2026-01">January 2026</time>
+                    –
+                    <time datetime="2026-03">March 2026</time>
+                </p>
+                <ul>
+                    <li>
+                        Explored over 10,000 healthcare records to
+                        study late-stage breast cancer diagnosis
+                        and social determinants of health.
+                    </li>
+                    <li>
+                        Cleaned and merged public health datasets
+                        for analysis.
+                    </li>
+                    <li>
+                        Created visualizations and reports to
+                        communicate findings and data limitations.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+
+            <article>
+                <h3>Air Quality and Respiratory Health Analysis</h3>
+                <p>
+                    <time datetime="2026-01">January 2026</time>
+                    –
+                    <time datetime="2026-03">March 2026</time>
+                </p>
+                <ul>
+                    <li>
+                        Analyzed county-level EPA and CDC data to
+                        explore air quality and respiratory mortality.
+                    </li>
+                    <li>
+                        Used multiple linear regression to model
+                        respiratory mortality.
+                    </li>
+                </ul>
+                <p>
+                    <a href="https://github.com/yunaxin/air-quality-health-analysis">
+                        View project on GitHub
+                    </a>
+                </p>
+            </article>
+
+            <article>
+                <h3>Super Bowl Advertising Impact Analysis</h3>
+                <p>
+                    <time datetime="2025-09">September 2025</time>
+                    –
+                    <time datetime="2025-12">December 2025</time>
+                </p>
+                <ul>
+                    <li>
+                        Studied search interest and stock performance
+                        for Coca-Cola and Pepsi around Super Bowl ads.
+                    </li>
+                    <li>
+                        Worked with a team of five and presented
+                        findings through visualizations and a video.
+                    </li>
+                </ul>
+                <p>
+                    <a href="https://github.com/yunaxin/superbowl_advertising_analysis">
+                        View project on GitHub
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
             <ul>
-                <li>Organized documents and maintained records.</li>
-                <li>Helped prepare reports for team meetings.</li>
-                <li>Collaborated with staff on daily tasks.</li>
+                <li>Programming: Python, HTML, CSS</li>
+                <li>
+                    Data analysis: Data cleaning, exploratory analysis,
+                    visualization, and regression
+                </li>
+                <li>Tools: Git, GitHub, VS Code, Jupyter Notebook</li>
+                <li>Communication: Reports, presentations, and teamwork</li>
             </ul>
-        </article>
-    </section>
+        </section>
+    </main>
 
-    <section>
-        <h2>Projects</h2>
-        <article>
-            <h3>Sample Weather Dashboard</h3>
-            <p>
-                Completed in
-                <time datetime="2026-03">March 2026</time>.
-            </p>
-            <ul>
-                <li>Created a webpage displaying sample weather data.</li>
-                <li>Used HTML and CSS to organize the layout.</li>
-            </ul>
-            <p>
-                <a href="../projects/index.html">Explore projects</a>
-            </p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: Python, HTML, CSS</li>
-            <li>Tools: Git, VS Code</li>
-            <li>Communication and teamwork</li>
-        </ul>
-    </section>
+    <footer>
+        <p>© 2026 · Amelia · Personal Portfolio</p>
+    </footer>
 </body>
 </html>
