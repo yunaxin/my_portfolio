@@ -1,9 +1,16 @@
+html {
+    --color-accent: oklch(65% 50% 0);
+    accent-color: var(--color-accent);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    max-width: 100ch;
+    margin-inline: auto;
     padding: 24px;
     background: #fff5f7;
     color: #493b40;
@@ -36,33 +43,46 @@ button:focus-visible {
 }
 
 /* Allow navigation links to wrap on smaller screens. */
-nav ul {
+nav ul,
+nav li {
+    display: contents;
+}
+
+nav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 12px 24px;
-    padding: 0 0 18px;
-    margin: 0 0 32px;
-    list-style: none;
-    border-bottom: 1px solid #efd0da;
+    margin-bottom: 1em;
+    border-bottom: 1px solid oklch(80% 3% 200);
 }
 
 nav a {
+    flex: 1;
     text-decoration: none;
-    font-weight: bold;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
 }
 
-nav a[aria-current="page"] {
-    border-bottom: 2px solid currentColor;
+nav a.current {
+    border-bottom: 0.4em solid oklch(80% 3% 200);
+    padding-bottom: 0.1em;
+}
+
+nav a:hover {
+    border-bottom: 0.4em solid var(--color-accent);
 }
 
 h1,
 h2,
-h3 {
-    line-height: 1.2;
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+    text-wrap: balance;
 }
 
 h1 {
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: 400%;
     margin: 12px 0 20px;
 }
 
@@ -117,6 +137,10 @@ button {
     cursor: pointer;
 }
 
+button {
+   grid-column: 1 / -1;
+}
+
 .button:hover,
 button:hover {
     background: #73364b;
@@ -127,6 +151,22 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+}
+
+.projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+
+.projects h2 {
+    margin: 0;
 }
 
 article {
@@ -143,19 +183,20 @@ article h3 {
 
 form {
     max-width: 600px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
 }
 
 label {
-    display: block;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
     font-weight: bold;
 }
 
 input,
 textarea {
-    display: block;
-    width: 100%;
-    margin-top: 6px;
     padding: 12px;
     border: 1px solid #c68b9e;
     border-radius: 8px;
@@ -190,4 +231,22 @@ footer {
     .intro {
         gap: 24px;
     }
+}
+
+body:has(#education-heading) main header {
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 1em;
+}
+
+body:has(#education-heading) section h2 {
+    color: var(--color-accent);
+}
+
+body:has(#education-heading) article {
+    border-left: 4px solid var(--color-accent);
+}
+
+body:has(#education-heading) time {
+    color: #994c67;
+    font-size: 0.9em;
 }
