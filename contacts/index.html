@@ -8,33 +8,19 @@
     <script type="module" src="../global.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../projects/index.html">Projects</a></li>
-        <li><a href="../contacts/index.html" class="current">Contact</a></li>
-        <li><a href="https://github.com/yunaxin" target="_blank">GitHub</a></li>
-        <li><a href="../resume/index.html">Resume</a></li>
-        </ul>
-    </nav>
     <h1>My Contact Page</h1>
-    <form action="mailto:aoo@ucsd.edu" method="post" enctype="text/plain">
-        <label>
-            Email:
-            <input type="email" name="email">
-        </label>
+    <form action="mailto:aoo@ucsd.edu">
+    <label>
+        Subject:
+        <input name="subject">
+    </label>
 
-        <label>
-            Subject:
-            <input name="subject">
-        </label>
+    <label>
+        Message:
+        <textarea name="body"></textarea>
+    </label>
 
-        <label>
-            Message:
-            <textarea name="body"></textarea>
-        </label>
-
-        <button>Send</button>
-    </form>
+    <button>Send</button>
+</form>
 </body>
 </html>
