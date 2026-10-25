@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Lab 4: Loading Project Data",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Loaded projects from a JSON file, displayed the first three on my homepage, and fetched GitHub profile stats."
+  },
+  {
+    "title": "Lab 3: JavaScript Portfolio Updates",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Created automatic navigation, a theme switcher with saved preferences, and an improved contact form."
+  },
+  {
+    "title": "Lab 2: Portfolio Styling",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Used Flexbox, Grid, and subgrid to style navigation, align form fields, and create a responsive projects page."
+  },
+  {
+    "title": "Lab 1: Personal Portfolio",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built a personal website with Home, Projects, Contact, and Resume pages."
+  },
+  {
+    "title": "Air Quality and Respiratory Health Analysis",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed air quality and respiratory health data using exploratory analysis and multiple linear regression."
+  },
+  {
+    "title": "Disaster Damage Classification",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Worked with an ACM team to classify building damage in satellite images using a ResNet-18 model."
+  },
+  {
+    "title": "Housing Price Prediction",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Compared regression models for predicting home prices and examined their performance across price ranges."
+  },
+  {
+    "title": "Super Bowl Advertising Impact Analysis",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Studied changes in search interest and stock performance around Coca-Cola and Pepsi Super Bowl advertisements."
+  },
+  {
+    "title": "Placeholder Project 1",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Placeholder content with a sample year. Replace with a real project."
+  },
+  {
+    "title": "Placeholder Project 2",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Placeholder content with a sample year. Replace with a real project."
+  },
+  {
+    "title": "Placeholder Project 3",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Placeholder content with a sample year. Replace with a real project."
+  },
+  {
+    "title": "Placeholder Project 4",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Placeholder content with a sample year. Replace with a real project."
+  }
+]
