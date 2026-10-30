@@ -277,3 +277,73 @@ select {
     grid-row: 2;
     margin: 0;
 }
+
+.project-year {
+  color: gray;
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+}
+
+#projects-pie-plot {
+  width: 100%;
+  max-width: 20em;
+  flex: 0 1 20em;
+  margin-block: 2em;
+  overflow: visible;
+
+  &:has(path:hover) {
+    path:not(:hover) {
+      opacity: 0.5;
+    }
+  }
+
+  path {
+  transition: 300ms;
+  cursor: pointer;
+  }
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+
+  list-style: none;
+  border: 1px solid lightgray;
+  padding: 1em;
+  margin-block: 1em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.legend .swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: var(--color);
+  border-radius: 0.2em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.container .legend {
+  flex: 1;
+  min-width: 15em;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
