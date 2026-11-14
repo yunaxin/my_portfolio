@@ -70,5 +70,12 @@
     "year": 2024,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Placeholder content with a sample year. Replace with a real project."
+  },
+  {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "/my_portfolio/images/bikewatching.png",
+    "description": "An interactive map of bike traffic in Boston and Cambridge, with station traffic, arrival and departure patterns, and a time filter.",
+    "url": "https://yunaxin.github.io/bike-watching/"
   }
 ]
